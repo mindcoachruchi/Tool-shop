@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Multi Tool Hub - All-in-one solution for image, video, audio, and financial tools. Convert, compress, crop, trim and calculate with our free online tools.">
+    <meta name="keywords" content="online tools, image converter, video converter, audio trim, calculator, free tools">
+    <title>Multi Tool Hub - Your All-in-One Online Tool Solution</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5817745872382188" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --dark-navy: #1E1E2F;
+            --deep-blue: #2B2D42;
+            --gold: #FFD700;
+            --darker-gold: #E6C200;
+            --tool-card: #3A3D5B;
+            --text-light: #EAEAEA;
+            --shadow: rgba(255, 215, 0, 0.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--dark-navy);
+            color: var(--text-light);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: var(--deep-blue);
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 10;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--deep-blue);
+            font-size: 1.5rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            color: var(--gold);
+            text-shadow: 0 0 10px var(--shadow);
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .ad-container {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100px;
+            border: 1px dashed rgba(255, 215, 0, 0.3);
+        }
+
+        .ad-label {
+            color: rgba(255, 215, 0, 0.7);
+            font-size: 0.9rem;
+            position: absolute;
+            top: 8px;
+            left: 12px;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .tool-card {
+            background-color: var(--tool-card);
+            border-radius: 10px;
+            padding: 1.8rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255, 215, 0, 0.1);
+        }
+
+        .tool-card:hover {
+            background-color: var(--gold);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px var(--shadow);
+        }
+
+        .tool-card:hover h3,
+        .tool-card:hover p {
+            color: var(--dark-navy);
+        }
+
+        .tool-card:hover .tool-icon {
+            background-color: var(--dark-navy);
+            color: var(--gold);
+        }
+
+        .tool-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(255, 215, 0, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 1.8rem;
+            color: var(--gold);
+            transition: all 0.3s ease;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--gold);
+            transition: color 0.3s ease;
+        }
+
+        .tool-card p {
+            margin-bottom: 1.5rem;
+            color: rgba(234, 234, 234, 0.8);
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .btn {
+            background-color: var(--gold);
+            color: var(--dark-navy);
+            border: none;
+            padding: 0.8rem 1.8rem;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: var(--darker-gold);
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: var(--deep-blue);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            border-top: 1px solid rgba(255, 215, 0, 0.1);
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .footer-links a {
+            color: var(--gold);
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .footer-links a:hover {
+            opacity: 0.8;
+        }
+
+        .copyright {
+            margin-top: 1.5rem;
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .tool-card {
+                padding: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo-container {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .tagline {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo-icon">M</div>
+            <div>
+                <h1>Multi Tool Hub</h1>
+                <p class="tagline">All your essential tools in one place</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="ad-container">
+            <div class="ad-label">Advertisement</div>
+            <!-- Google AdSense Leaderboard Ad -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-5817745872382188"
+                 data-ad-slot="6946514235"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <div class="tools-grid">
+            <!-- Tool 1 -->
+            <div class="tool-card">
+                <div class="tool-icon">🖼️</div>
+                <h3>Image Converter</h3>
+                <p>Convert images between JPG, PNG, WEBP, and other formats with high quality</p>
+                <button class="btn" onclick="redirectToTool('Image Converter')">Use Tool</button>
+            </div>
+            
+            <!-- Tool 2 -->
+            <div class="tool-card">
+                <div class="tool-icon">📦</div>
+                <h3>Image Compressor</h3>
+                <p>Reduce image file size without noticeable quality loss</p>
+                <button class="btn" onclick="redirectToTool('Image Compressor')">Use Tool</button>
+            </div>
+            
+            <!-- Tool 3 -->
+            <div class="tool-card">
+                <div class="tool-icon">✂️</div>
+                <h3>Image Crop</h3>
+                <p>Crop images to desired dimensions and aspect ratios</p>
+                <button class="btn" onclick="redirectToTool('Image Crop')">Use Tool</button>
+            </div>
+            
+            <!-- Tool 4 -->
+            <div class="tool-card">
+                <div class="tool-icon">🎬</div>
+                <h3>Video Converter</h3>
+                <p>Convert videos to MP4, AVI, MOV, and other popular formats</p>
+                <button class="btn" onclick="redirectToTool('Video Converter')">Use Tool</button>
+            </div>
+            
+            <!-- Middle Ad Container -->
+            <div class="ad-container" style="grid-column: span 2;">
+                <div class="ad-label">Advertisement</div>
+                <!-- Google AdSense Rectangle Ad -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-5817745872382188"
+                     data-ad-slot="6946514235"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+            
+            <!-- Tool 5 -->
+            <div class="tool-card">
+                <div class="tool-icon">🎂</div>
+                <h3>Age Calculator</h3>
+                <p>Calculate your exact age in years, months, weeks, and days</p>
+                <button class="btn" onclick="redirectToTool('Age Calculator')">Use Tool</button>
+            </div>
+            
+            <!-- Tool 6 -->
+            <div class="tool-card">
+                <div class="tool-icon">💰</div>
+                <h3>EMI Calculator</h3>
+                <p>Calculate your Equated Monthly Installment for loans</p>
+                <button class="btn" onclick="redirectToTool('EMI Calculator')">Use Tool</button>
+            </div>
+            
+            <!-- Tool 7 -->
+            <div class="tool-card">
+                <div class="tool-icon">📈</div>
+                <h3>SIP Calculator</h3>
+                <p>Calculate returns on your Systematic Investment Plan</p>
+                <button class="btn" onclick="redirectToTool('SIP Calculator')">Use Tool</button>
+            </div>
+            
+            <!-- Tool 8 -->
+            <div class="tool-card">
+                <div class="tool-icon">🎵</div>
+                <h3>Audio Trim</h3>
+                <p>Trim audio files and export in MP3, WAV, and other formats</p>
+                <button class="btn" onclick="redirectToTool('Audio Trim')">Use Tool</button>
+            </div>
+        </div>
+        
+        <div class="ad-container">
+            <div class="ad-label">Advertisement</div>
+            <!-- Google AdSense Leaderboard Ad -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-5817745872382188"
+                 data-ad-slot="6946514235"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2023 Multi Tool Hub. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Us</a>
+            <a href="#">About</a>
+        </div>
+        <p class="copyright">Designed with ❤️ for your productivity</p>
+    </footer>
+
+    <script>
+        function redirectToTool(toolName) {
+            alert(`Redirecting to ${toolName}...`);
+            // In a real implementation, this would navigate to the tool page
+            // window.location.href = toolName.toLowerCase().replace(/\s+/g, '-') + '.html';
+        }
+        
+        // Initialize AdSense ads
+        window.addEventListener('load', function() {
+            // Push ads again to ensure they load if there was any issue
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        });
+    </script>
+</body>
+</html>
